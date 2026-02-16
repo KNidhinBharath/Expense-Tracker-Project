@@ -44,19 +44,20 @@ export default function Explorer(){
         <h2 className="text-2xl font-bold ">Transaction Explorer</h2>
       </div>
 
-      {/* Filters Card */}
-      <div className="bg-white rounded-xl shadow p-5 mb-6">
-        <TransactionFilters
-          search={search}
-          setSearch={setSearch}
-        />
-      </div>
-
+     
       {/* Form Card */}
       <div className="bg-white rounded-xl shadow p-5 mb-6">
         <TransactionForm
           onSubmit={handleSubmit}
           editing={editing}
+        />
+      </div>
+
+       {/* Filters Card */}
+      <div className="bg-white rounded-xl shadow p-5 mb-6">
+        <TransactionFilters
+          search={search}
+          setSearch={setSearch}
         />
       </div>
 
